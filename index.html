@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eid Mubarak - Salami Request</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        h1 {
+            color: #4CAF50;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            color: #3E4A59;
+        }
+        .request-button {
+            background-color: #FF6347;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+        .request-button:hover {
+            background-color: #FF4500;
+        }
+        .hidden {
+            display: none;
+        }
+        .thank-you {
+            font-size: 1.5em;
+            color: #2E8B57;
+        }
+    </style>
+</head>
+<body>
+    <h1>Eid Mubarak!</h1>
+    <p>Wishing you all the blessings of Eid!</p>
+    <button class="request-button" onclick="askForSalami()">Click for Salami!</button>
+    <p class="hidden thank-you">Thank you for your generous Salami gift! 🥳</p>
+
+    <script>
+        function askForSalami() {
+            const button = document.querySelector('.request-button');
+            const thankYouMessage = document.querySelector('.thank-you');
+            button.style.display = 'none';
+            thankYouMessage.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
